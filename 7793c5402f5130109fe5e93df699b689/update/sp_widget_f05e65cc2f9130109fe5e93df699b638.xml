@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function($uibModal,$scope) {
+	/* widget controller */
+	var c = this;
+
+	c.cip = false;
+
+	c.action_stage = null;
+	c.comments_stage = null;
+	c.runAction = function(action){ 
+		if(action.need_comments){
+			c.action_stage = action;
+			c.action_comments_modal = $uibModal.open({
+				templateUrl : 'jg_req_comments_modal.html',
+				scope : $scope,
+				backdrop : 'static'
+			});
+		}else{
+			c.executeAction(action)
+		}
+	}
+
+	c.submitActionComments = function(){
+		c.action_comments_modal.close();
+		c.executeAction(c.action_stage,c.comments_stage);
+		c.comments_stage = '';
+	}
+
+	c.cancelActionModal = function(){
+		c.action_comments_modal.close();
+		c.comments_stage = '';
+		c.action_stage =  '';
+	}
+
+	c.executeAction = function(action,comments){
+		c.data.action = 'runAction';
+		c.data.runAction = action;
+		if(comments){
+			c.data.addComments = comments;
+		}
+
+		c.cip = true;
+
+		c.server.update().then(
+			function(res){ // success callback
+				c.cip = false;
+				c.data.action = null;
+				c.data.runAction = null;
+				c.data.addComments = null; 
+			},function(res){ // failed callback
+				c.cip = false;
+			});
+	};
+
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>request_action_tester</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>Request Action Tester</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {
+	/* populate the 'data' object */
+	/* e.g., data.table = $sp.getValue('table'); */
+	data.request = ''
+
+	data.req_table = 'x_195491_job_gra_0_jg_request';
+	data.request_id = $sp.getParameter('sys_id');
+
+	var actionUtils = new x_195491_job_gra_0.JgActionUtils();
+
+	var grReq = new GlideRecord(data.req_table);
+	grReq.get(data.request_id);
+
+
+	var grProfile = new GlideRecord('x_195491_job_gra_0_jg_user_profile');
+	grProfile.addEncodedQuery("userDYNAMIC90d1921e5f510100a9ad2572f2b477fe");
+	grProfile.query();
+
+	if(grProfile.next()){
+		data.user_role = grProfile.getValue('role'); 
+	}
+
+	if(input && input.action == 'runAction'){
+		actionUtils.executeAction(input.runAction,data.request_id,input.addComments);
+	}
+
+
+	data.actions = actionUtils.getActionsForRequest(data.request_id);
+
+
+})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-07 10:52:25</sys_created_on>
+        <sys_id>f05e65cc2f9130109fe5e93df699b638</sys_id>
+        <sys_mod_count>38</sys_mod_count>
+        <sys_name>Request Action Tester</sys_name>
+        <sys_package display_value="Job Grading" source="x_195491_job_gra_0">7793c5402f5130109fe5e93df699b689</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Job Grading">7793c5402f5130109fe5e93df699b689</sys_scope>
+        <sys_update_name>sp_widget_f05e65cc2f9130109fe5e93df699b638</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-08 09:05:37</sys_updated_on>
+        <template><![CDATA[<div class="col-lg-12">
+  <button class="btn btn-primary" 
+          ng-repeat="action in c.data.actions" 
+          ng-click="c.runAction(action)">
+    {{action.name}}
+  </button>
+</div>]]></template>
+    </sp_widget>
+</record_update>

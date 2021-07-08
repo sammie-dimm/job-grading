@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+    <question_choice action="INSERT_OR_UPDATE">
+        <inactive>false</inactive>
+        <order>100</order>
+        <published_ref/>
+        <question display_value="Type of Request">9c7402542f5130109fe5e93df699b6c2</question>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-08 07:11:40</sys_created_on>
+        <sys_id>ac554a542f5130109fe5e93df699b60c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Re-banding</sys_name>
+        <sys_package display_value="Job Grading" source="x_195491_job_gra_0">7793c5402f5130109fe5e93df699b689</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Job Grading">7793c5402f5130109fe5e93df699b689</sys_scope>
+        <sys_update_name>question_choice_ac554a542f5130109fe5e93df699b60c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-08 07:11:40</sys_updated_on>
+        <text>Re-banding</text>
+        <value>Re-banding</value>
+    </question_choice>
+    <fx_price action="delete_multiple" query="id=ac554a542f5130109fe5e93df699b60c"/>
+</record_update>

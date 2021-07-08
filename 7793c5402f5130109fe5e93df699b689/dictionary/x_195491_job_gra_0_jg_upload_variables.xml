@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="sys_import_set_row" label="JG upload variables" max_length="40" name="x_195491_job_gra_0_jg_upload_variables" sizeclass="40" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Active" label="Active" max_length="40" name="u_active" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Application" label="Application" max_length="40" name="u_application" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Catalog item" label="Catalog item" max_length="40" name="u_catalog_item" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Map to field" label="Map to field" max_length="40" name="u_map_to_field" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Name" label="Name" max_length="40" name="u_name" type="string"/>
+        <element attributes="import_attribute_name=Order" label="Order" max_length="40" name="u_order" type="integer"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Question" label="Question" max_length="224" name="u_question" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Type" label="Type" max_length="40" name="u_type" type="string"/>
+    </element>
+</database>

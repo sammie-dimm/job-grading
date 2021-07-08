@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_object">
+    <sys_db_object action="DELETE">
+        <access/>
+        <actions_access>true</actions_access>
+        <alter_access>true</alter_access>
+        <caller_access/>
+        <client_scripts_access>true</client_scripts_access>
+        <configuration_access>false</configuration_access>
+        <create_access>true</create_access>
+        <create_access_controls>false</create_access_controls>
+        <delete_access>false</delete_access>
+        <extension_model/>
+        <is_extendable>false</is_extendable>
+        <label>JG Request Actions</label>
+        <live_feed_enabled>false</live_feed_enabled>
+        <name>x_195491_job_gra_0_jg_request_actions</name>
+        <number_ref/>
+        <provider_class/>
+        <read_access>true</read_access>
+        <scriptable_table>false</scriptable_table>
+        <super_class/>
+        <sys_class_code/>
+        <sys_class_name>sys_db_object</sys_class_name>
+        <sys_class_path/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-07 08:43:28</sys_created_on>
+        <sys_id>48d0d9c82f5130109fe5e93df699b6ff</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Job Gra 0 Jg Request Actions</sys_name>
+        <sys_package display_value="Job Grading" source="x_195491_job_gra_0">7793c5402f5130109fe5e93df699b689</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Job Grading">7793c5402f5130109fe5e93df699b689</sys_scope>
+        <sys_update_name>sys_db_object_48d0d9c82f5130109fe5e93df699b6ff</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-07 08:43:28</sys_updated_on>
+        <update_access>true</update_access>
+        <user_role/>
+        <ws_access>true</ws_access>
+    </sys_db_object>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Job Grading">7793c5402f5130109fe5e93df699b689</application>
+        <file_path/>
+        <instance_id>d3a80340dbdee8d00b9d21c4059619e6</instance_id>
+        <instance_name>dev106613</instance_name>
+        <name>sys_db_object_48d0d9c82f5130109fe5e93df699b6ff</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_object"><sys_db_object action="INSERT_OR_UPDATE"><access/><actions_access>true</actions_access><alter_access>true</alter_access><caller_access/><client_scripts_access>true</client_scripts_access><configuration_access>false</configuration_access><create_access>true</create_access><create_access_controls>false</create_access_controls><delete_access>false</delete_access><extension_model/><is_extendable>false</is_extendable><label>JG Request Actions</label><live_feed_enabled>false</live_feed_enabled><name>x_195491_job_gra_0_jg_request_actions</name><number_ref/><provider_class/><read_access>true</read_access><scriptable_table>false</scriptable_table><super_class/><sys_class_code/><sys_class_name>sys_db_object</sys_class_name><sys_class_path/><sys_created_by>admin</sys_created_by><sys_created_on>2021-07-07 08:43:28</sys_created_on><sys_id>48d0d9c82f5130109fe5e93df699b6ff</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Job Gra 0 Jg Request Actions</sys_name><sys_package display_value="Job Grading" source="x_195491_job_gra_0">7793c5402f5130109fe5e93df699b689</sys_package><sys_policy/><sys_scope display_value="Job Grading">7793c5402f5130109fe5e93df699b689</sys_scope><sys_update_name>sys_db_object_48d0d9c82f5130109fe5e93df699b6ff</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-07-07 08:43:28</sys_updated_on><update_access>true</update_access><user_role/><ws_access>true</ws_access></sys_db_object></record_update>]]></payload>
+        <payload_hash>-1335244340</payload_hash>
+        <record_name>JG Request Actions</record_name>
+        <reverted_from/>
+        <source>b69941c02f5130109fe5e93df699b6ec</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-07 08:43:29</sys_created_on>
+        <sys_id>80d01dc82f5130109fe5e93df699b620</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>17a8022ea5f0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-07 08:43:29</sys_updated_on>
+        <type>Table</type>
+        <update_guid>0cd01dc806513010195c5d5f7ffa9f1f</update_guid>
+        <update_guid_history>0cd01dc806513010195c5d5f7ffa9f1f:-1335244340</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-07 08:44:13</sys_created_on>
+        <sys_db_object display_value="" name="sys_db_object">sys_db_object</sys_db_object>
+        <sys_id>b939f4790e68487495a9f6aae52fd790</sys_id>
+        <sys_metadata>48d0d9c82f5130109fe5e93df699b6ff</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Job Gra 0 Jg Request Actions</sys_name>
+        <sys_package display_value="Job Grading" source="x_195491_job_gra_0">7793c5402f5130109fe5e93df699b689</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Job Grading">7793c5402f5130109fe5e93df699b689</sys_scope>
+        <sys_scope_delete display_value="">5488fffd00164976b2ac4ed11f8ff2c9</sys_scope_delete>
+        <sys_update_name>sys_db_object_48d0d9c82f5130109fe5e93df699b6ff</sys_update_name>
+        <sys_update_version display_value="sys_db_object_48d0d9c82f5130109fe5e93df699b6ff">80d01dc82f5130109fe5e93df699b620</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-07 08:44:13</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

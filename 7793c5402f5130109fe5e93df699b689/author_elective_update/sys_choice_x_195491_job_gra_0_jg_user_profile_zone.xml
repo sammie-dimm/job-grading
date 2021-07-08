@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="zone" table="x_195491_job_gra_0_jg_user_profile" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>zone</element>
+            <name>x_195491_job_gra_0_jg_user_profile</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-07-07 08:31:51</sys_created_on>
+            <sys_id>b92e49482f5130109fe5e93df699b6e3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>zone</sys_name>
+            <sys_package display_value="Job Grading" source="x_195491_job_gra_0">7793c5402f5130109fe5e93df699b689</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Job Grading">7793c5402f5130109fe5e93df699b689</sys_scope>
+            <sys_update_name>sys_choice_x_195491_job_gra_0_jg_user_profile_zone</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-07-07 08:31:51</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>zone</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>GHQ</label>
+            <language>en</language>
+            <name>x_195491_job_gra_0_jg_user_profile</name>
+            <sequence>10</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-07-07 08:31:51</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>fd2e49482f5130109fe5e93df699b6d9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-07-07 08:31:51</sys_updated_on>
+            <value>ghq</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>zone</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>APAC</label>
+            <language>en</language>
+            <name>x_195491_job_gra_0_jg_user_profile</name>
+            <sequence>20</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-07-07 08:31:51</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>fd2e49482f5130109fe5e93df699b6e2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-07-07 08:31:51</sys_updated_on>
+            <value>apac</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>zone</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>EUR</label>
+            <language>en</language>
+            <name>x_195491_job_gra_0_jg_user_profile</name>
+            <sequence>30</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-07-07 08:31:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4a2e49482f5130109fe5e93df699b6f6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-07-07 08:31:52</sys_updated_on>
+            <value>eur</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>zone</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>NAZ</label>
+            <language>en</language>
+            <name>x_195491_job_gra_0_jg_user_profile</name>
+            <sequence>40</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-07-07 08:31:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ca2e49482f5130109fe5e93df699b6e6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-07-07 08:31:52</sys_updated_on>
+            <value>naz</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>zone</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>MAZ</label>
+            <language>en</language>
+            <name>x_195491_job_gra_0_jg_user_profile</name>
+            <sequence>50</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-07-07 08:31:53</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>562e49482f5130109fe5e93df699b6fa</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-07-07 08:31:53</sys_updated_on>
+            <value>maz</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>zone</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>SAZ</label>
+            <language>en</language>
+            <name>x_195491_job_gra_0_jg_user_profile</name>
+            <sequence>60</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-07-07 08:31:53</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d22e89482f5130109fe5e93df699b61c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-07-07 08:31:53</sys_updated_on>
+            <value>saz</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>zone</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>AFR</label>
+            <language>en</language>
+            <name>x_195491_job_gra_0_jg_user_profile</name>
+            <sequence>70</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-07-07 08:31:54</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>de2e89482f5130109fe5e93df699b61f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-07-07 08:31:54</sys_updated_on>
+            <value>afr</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

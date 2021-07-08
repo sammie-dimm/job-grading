@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="business_unit" table="x_195491_job_gra_0_jg_user_profile" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>business_unit</element>
+            <name>x_195491_job_gra_0_jg_user_profile</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-07-07 08:31:54</sys_created_on>
+            <sys_id>2e2e49482f5130109fe5e93df699b6fe</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>business_unit</sys_name>
+            <sys_package display_value="Job Grading" source="x_195491_job_gra_0">7793c5402f5130109fe5e93df699b689</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Job Grading">7793c5402f5130109fe5e93df699b689</sys_scope>
+            <sys_update_name>sys_choice_x_195491_job_gra_0_jg_user_profile_business_unit</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-07-07 08:31:54</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>business_unit</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>BU CENTRAL</label>
+            <language>en</language>
+            <name>x_195491_job_gra_0_jg_user_profile</name>
+            <sequence>10</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-07-07 08:31:54</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>622e49482f5130109fe5e93df699b6fe</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-07-07 08:31:54</sys_updated_on>
+            <value>bu_central</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>business_unit</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>BU CHINA</label>
+            <language>en</language>
+            <name>x_195491_job_gra_0_jg_user_profile</name>
+            <sequence>20</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-07-07 08:31:55</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ea2e89482f5130109fe5e93df699b623</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-07-07 08:31:55</sys_updated_on>
+            <value>bu_china</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>business_unit</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>BU EAST</label>
+            <language>en</language>
+            <name>x_195491_job_gra_0_jg_user_profile</name>
+            <sequence>30</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-07-07 08:31:55</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>222e89482f5130109fe5e93df699b640</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-07-07 08:31:55</sys_updated_on>
+            <value>bu_east</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

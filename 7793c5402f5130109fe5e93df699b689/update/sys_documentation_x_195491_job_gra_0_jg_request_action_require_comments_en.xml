@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="require_comments" label="Require Comments" language="en" table="x_195491_job_gra_0_jg_request_action">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>require_comments</element>
+            <help/>
+            <hint/>
+            <label>Require Comments</label>
+            <language>en</language>
+            <name>x_195491_job_gra_0_jg_request_action</name>
+            <plural>Require Comments</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-07-08 06:59:06</sys_created_on>
+            <sys_id>708246d02f5130109fe5e93df699b6ee</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Require Comments</sys_name>
+            <sys_package display_value="Job Grading" source="x_195491_job_gra_0">7793c5402f5130109fe5e93df699b689</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Job Grading">7793c5402f5130109fe5e93df699b689</sys_scope>
+            <sys_update_name>sys_documentation_x_195491_job_gra_0_jg_request_action_require_comments_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-07-08 06:59:06</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

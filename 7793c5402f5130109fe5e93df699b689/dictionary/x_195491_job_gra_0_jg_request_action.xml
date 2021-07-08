@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="JG Request Action" max_length="40" name="x_195491_job_gra_0_jg_request_action" sizeclass="1" type="collection">
+        <element default="(function(request,addParams){&#13;&#10;&#13;&#10;})(request,addParams); &#13;&#10;// set result variable to check if action is successfully executed" label="Action" mandatory="true" max_length="8000" name="action" type="script"/>
+        <element choice="1" label="Available for role" mandatory="true" max_length="40" name="available_for_role" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="JG Admin" sequence="10" value="jg_admin"/>
+                <element inactive_on_update="false" label="HR BP" sequence="20" value="hr_bp"/>
+                <element inactive_on_update="false" label="BU Rewards" sequence="30" value="bu_rewards"/>
+                <element inactive_on_update="false" label="Zone Rewards Director" sequence="40" value="zn_dr"/>
+                <element inactive_on_update="false" label="VP" sequence="50" value="vp"/>
+            </choice>
+        </element>
+        <element label="Available for Stages" mandatory="true" max_length="4000" name="available_for_stages" reference="x_195491_job_gra_0_stage_mapping" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="glide_list"/>
+        <element attributes="condition_builder=v2" dependent="table" dependent_on_field="table" label="Condition Builder" max_length="4000" name="condition_builder" type="conditions" use_dependent_field="true"/>
+        <element choice="1" default="simple" label="Condition Type" mandatory="true" max_length="40" name="condition_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Simple" sequence="10" value="simple"/>
+                <element inactive_on_update="false" label="Advanced" sequence="20" value="advanced"/>
+            </choice>
+        </element>
+        <element choice="1" label="Filter Tag" max_length="40" name="filter_tag" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Jg Request"/>
+                <element inactive_on_update="false" label="Project Request"/>
+            </choice>
+        </element>
+        <element display="true" label="Name" mandatory="true" max_length="100" name="name" type="string"/>
+        <element label="Require Comments" max_length="40" name="require_comments" type="boolean"/>
+        <element default="(function(request,addParams){&#13;&#10;&#13;&#10;})(request,addParams);&#13;&#10;// set answer to true or false" label="Script Condition" max_length="8000" name="script_condition" type="script"/>
+        <element default="x_195491_job_gra_0_jg_request" label="Table" max_length="80" name="table" read_only="true" type="table_name"/>
+        <element label="Value" mandatory="true" max_length="100" name="value" type="string"/>
+    </element>
+</database>

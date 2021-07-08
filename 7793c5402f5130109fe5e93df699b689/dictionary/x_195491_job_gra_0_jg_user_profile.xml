@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Jg User Profile" max_length="40" name="x_195491_job_gra_0_jg_user_profile" sizeclass="1" type="collection">
+        <element label="Active" max_length="40" name="active" type="boolean"/>
+        <element choice="3" label="Business Unit" max_length="40" name="business_unit" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="BU CENTRAL" sequence="10" value="bu_central"/>
+                <element inactive_on_update="false" label="BU CHINA" sequence="20" value="bu_china"/>
+                <element inactive_on_update="false" label="BU EAST" sequence="30" value="bu_east"/>
+            </choice>
+        </element>
+        <element choice="3" label="Role" max_length="40" name="role" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="JG Admin" sequence="10" value="jg_admin"/>
+                <element inactive_on_update="false" label="HR BP" sequence="20" value="hr_bp"/>
+                <element inactive_on_update="false" label="BU Rewards" sequence="30" value="bu_rewards"/>
+                <element inactive_on_update="false" label="Zone Rewards Director" sequence="40" value="zn_dr"/>
+                <element inactive_on_update="false" label="VP" sequence="50" value="vp"/>
+            </choice>
+        </element>
+        <element display="true" label="User" max_length="32" name="user" reference="sys_user" type="reference"/>
+        <element choice="3" label="Zone" max_length="40" name="zone" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="GHQ" sequence="10" value="ghq"/>
+                <element inactive_on_update="false" label="APAC" sequence="20" value="apac"/>
+                <element inactive_on_update="false" label="EUR" sequence="30" value="eur"/>
+                <element inactive_on_update="false" label="NAZ" sequence="40" value="naz"/>
+                <element inactive_on_update="false" label="MAZ" sequence="50" value="maz"/>
+                <element inactive_on_update="false" label="SAZ" sequence="60" value="saz"/>
+                <element inactive_on_update="false" label="AFR" sequence="70" value="afr"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="user"/>
+        </index>
+    </element>
+</database>

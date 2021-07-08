@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="condition_type" table="x_195491_job_gra_0_jg_request_action" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>condition_type</element>
+            <name>x_195491_job_gra_0_jg_request_action</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-07-07 08:55:40</sys_created_on>
+            <sys_id>6a93118c2f5130109fe5e93df699b6f1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>condition_type</sys_name>
+            <sys_package display_value="Job Grading" source="x_195491_job_gra_0">7793c5402f5130109fe5e93df699b689</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Job Grading">7793c5402f5130109fe5e93df699b689</sys_scope>
+            <sys_update_name>sys_choice_x_195491_job_gra_0_jg_request_action_condition_type</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-07-07 08:55:40</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>condition_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Simple</label>
+            <language>en</language>
+            <name>x_195491_job_gra_0_jg_request_action</name>
+            <sequence>10</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-07-07 08:55:40</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ae93118c2f5130109fe5e93df699b6f0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-07-07 08:55:40</sys_updated_on>
+            <value>simple</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>condition_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Advanced</label>
+            <language>en</language>
+            <name>x_195491_job_gra_0_jg_request_action</name>
+            <sequence>20</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-07-07 08:55:40</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2e93118c2f5130109fe5e93df699b6c4</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-07-07 08:55:40</sys_updated_on>
+            <value>advanced</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

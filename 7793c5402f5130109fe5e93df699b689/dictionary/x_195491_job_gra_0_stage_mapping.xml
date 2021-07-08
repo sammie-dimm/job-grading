@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Stage Mapping" max_length="40" name="x_195491_job_gra_0_stage_mapping" sizeclass="7" type="collection">
+        <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
+        <element display="true" label="Name" max_length="100" name="name" type="string"/>
+        <element label="Past tense" max_length="100" name="past_tense" type="string"/>
+        <element label="value" max_length="100" name="value" type="string"/>
+    </element>
+</database>

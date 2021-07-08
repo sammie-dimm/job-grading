@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_195491_job_gra_0.JgActionUtils</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>JgActionUtils</name>
+        <script><![CDATA[var JgActionUtils = Class.create();
+JgActionUtils.prototype = {
+	initialize: function() {
+	},
+
+	getReqTable : function(){
+		return 'x_195491_job_gra_0_jg_request';
+	},
+
+	getActionTable : function(){
+		return 'x_195491_job_gra_0_jg_request_action';
+	},
+
+	evalActionConditionForRequest : function(action_gr,req_gr){
+
+		var cond_type = action_gr.getValue('condition_type');
+
+		if(cond_type == 'simple'){
+			var condition_string = action_gr.getValue('condition_builder');
+
+			var grReq = new GlideRecord(this.getReqTable());
+			grReq.addQuery('sys_id',req_gr.getValue('sys_id'));
+			grReq.addEncodedQuery(condition_string);
+			grReq.query(); 
+			return grReq.hasNext(); 
+		}else{
+
+			var action_eval = new GlideScopedEvaluator();
+			var res = action_eval.evaluateScript(action_gr,'script_condition',{answer : false, request : req_gr, addParams : null});  
+			return action_eval.getVariable('answer'); 
+		} 
+	},
+
+	executeAction : function(action,request_id,comments){
+
+		//gs.addInfoMessage(comments);
+
+		var gr = new GlideRecord(this.getActionTable());
+		gr.get(action.sys_id);
+
+		var grReq = new GlideRecord(this.getReqTable());
+		grReq.get(request_id);
+
+		var allowed = this.evalActionConditionForRequest(gr,grReq);
+
+		if(allowed){
+			var action_eval = new GlideScopedEvaluator();
+			action_eval.evaluateScript(gr,'action', {
+				result : null, 
+				request : grReq, 
+				addParams : comments  
+			});
+			return action_eval.getVariable('result');
+		}else{
+			gs.addErrorMessage('Access denied, Please contact Job Grading support');
+			return false;
+		}
+	},
+
+	getActionsForRequest : function(request_id){
+
+		var grReq = new GlideRecord(this.getReqTable());
+		grReq.get(request_id);
+
+		var jgUtils = new x_195491_job_gra_0.JgUtils();
+		var user_role = jgUtils.getUserRole();
+
+		var gr = new GlideRecord(this.getActionTable());
+		gr.addEncodedQuery('available_for_role='+ user_role +'^available_for_stagesLIKE' + grReq.getValue('stage'));
+		gr.query();
+
+		var actions = [];
+
+		while(gr.next()){ 
+
+			var allowed = this.evalActionConditionForRequest(gr,grReq);  
+
+			if(allowed){
+				actions.push({
+					name : gr.getValue('name'),
+					key : gr.getValue('value'),
+					need_comments : gr.getDisplayValue('require_comments') == 'true',
+					sys_id : gr.getValue('sys_id')
+				});
+			} 
+		}
+
+		return actions;
+	},
+
+	type: 'JgActionUtils'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-08 07:03:58</sys_created_on>
+        <sys_id>3773c2142f5130109fe5e93df699b602</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_name>JgActionUtils</sys_name>
+        <sys_package display_value="Job Grading" source="x_195491_job_gra_0">7793c5402f5130109fe5e93df699b689</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Job Grading">7793c5402f5130109fe5e93df699b689</sys_scope>
+        <sys_update_name>sys_script_include_3773c2142f5130109fe5e93df699b602</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-08 09:15:00</sys_updated_on>
+    </sys_script_include>
+</record_update>

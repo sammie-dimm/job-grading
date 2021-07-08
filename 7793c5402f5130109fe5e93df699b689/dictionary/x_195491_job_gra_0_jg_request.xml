@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" label="JG Request" max_length="40" name="x_195491_job_gra_0_jg_request" sizeclass="8" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Additional Comments" max_length="40" name="additional_comments" type="journal_input"/>
+        <element attributes="encode_utf8=false" label="Assigned to" max_length="32" name="assigned_to" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Business Unit" max_length="40" name="business_unit" type="string">
+            <choice/>
+        </element>
+        <element attributes="encode_utf8=false" label="BU Rewards Manager" max_length="32" name="bu_rewards_manager" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Due Date" max_length="40" name="due_date" type="glide_date"/>
+        <element attributes="encode_utf8=false" label="JG Admin Responsible" max_length="32" name="jg_admin_responsible" reference="sys_user" type="reference"/>
+        <element attributes="encode_utf8=false" label="Line Manager" max_length="32" name="line_manager" reference="sys_user" type="reference"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="encode_utf8=false" label="Opened By" max_length="32" name="opened_by" reference="x_195491_job_gra_0_jg_user_profile" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Priority" max_length="40" name="priority" type="string">
+            <choice>
+                <element inactive_on_update="false" label="2 - High" sequence="100" value="2"/>
+                <element inactive_on_update="false" label="3 - Medium" sequence="200" value="6"/>
+                <element inactive_on_update="false" label="4 - Low" sequence="300" value="4"/>
+                <element inactive_on_update="false" label="Exception-High" sequence="400" value="50"/>
+                <element inactive_on_update="false" label="Exception-Medium" sequence="500" value="60"/>
+                <element inactive_on_update="false" label="Exception-Low" sequence="600" value="70"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Request Class" max_length="40" name="request_class" type="string">
+            <choice>
+                <element inactive_on_update="false" label="JG Project Request" value="jg_project_request"/>
+                <element inactive_on_update="false" label="JG request" value="jg_request"/>
+            </choice>
+        </element>
+        <element attributes="encode_utf8=false" label="Stage" max_length="32" name="stage" reference="x_195491_job_gra_0_stage_mapping" type="reference"/>
+        <element choice="1" label="Status" max_length="40" name="state" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Draft" sequence="100" value="-1"/>
+                <element inactive_on_update="false" label="Pending" sequence="200" value="-5"/>
+                <element inactive_on_update="false" label="Work in Progress" sequence="300" value="2"/>
+                <element inactive_on_update="false" label="Canceled" sequence="400" value="6"/>
+                <element inactive_on_update="false" label="Complete" sequence="500" value="5"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Work Notes" max_length="40" name="work_notes" type="journal_input"/>
+        <element attributes="encode_utf8=false" label="Zone Rewards Director" max_length="32" name="zone_rewards_director" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="line_manager"/>
+        </index>
+        <index name="index2">
+            <element name="stage"/>
+        </index>
+        <index name="index3">
+            <element name="opened_by"/>
+        </index>
+        <index name="index4">
+            <element name="zone_rewards_director"/>
+        </index>
+        <index name="index5">
+            <element name="jg_admin_responsible"/>
+        </index>
+        <index name="index6">
+            <element name="bu_rewards_manager"/>
+        </index>
+        <index name="index7">
+            <element name="assigned_to"/>
+        </index>
+    </element>
+</database>

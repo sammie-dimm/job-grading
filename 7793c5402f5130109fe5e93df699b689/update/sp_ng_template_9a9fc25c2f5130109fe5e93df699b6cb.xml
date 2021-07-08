@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_ng_template">
+    <sp_ng_template action="INSERT_OR_UPDATE">
+        <id>jg_req_comments_modal.html</id>
+        <sp_widget display_value="Request Action Tester">f05e65cc2f9130109fe5e93df699b638</sp_widget>
+        <sys_class_name>sp_ng_template</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-07-08 07:57:02</sys_created_on>
+        <sys_id>9a9fc25c2f5130109fe5e93df699b6cb</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>jg_req_comments_modal.html</sys_name>
+        <sys_package display_value="Job Grading" source="x_195491_job_gra_0">7793c5402f5130109fe5e93df699b689</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Job Grading">7793c5402f5130109fe5e93df699b689</sys_scope>
+        <sys_update_name>sp_ng_template_9a9fc25c2f5130109fe5e93df699b6cb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-07-08 08:27:27</sys_updated_on>
+        <template><![CDATA[<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h4 class="h4">
+      Please add your comments
+    </h4>
+  </div>
+  <div class="panel-body">
+    <form class="form-group">
+      <label> <span class="text-danger"> * </span> Comments </label>
+      <textarea class="form-control"
+                ng-model="c.comments_stage"
+                rows="4"> 
+      </textarea>
+    </form>
+  </div>
+  <div class="panel-footer clearfix" >
+    <button class="btn btn-primary pull-right"
+            ng-click="c.submitActionComments()">
+      Submit
+    </button>
+    <button class="btn btn-default pull-right"
+            ng-click="c.cancelActionModal()">
+      Cancel
+    </button>
+
+  </div>
+</div>]]></template>
+    </sp_ng_template>
+</record_update>
