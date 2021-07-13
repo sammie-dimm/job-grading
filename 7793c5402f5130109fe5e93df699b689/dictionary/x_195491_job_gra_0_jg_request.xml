@@ -21,6 +21,12 @@
                 <element inactive_on_update="false" label="Exception-Low" sequence="600" value="70"/>
             </choice>
         </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Process Identify" max_length="40" name="process_identify" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Exception Window" value="exception_window"/>
+                <element inactive_on_update="false" label="Window" value="window"/>
+            </choice>
+        </element>
         <element attributes="edge_encryption_enabled=true" choice="1" label="Request Class" max_length="40" name="request_class" type="string">
             <choice>
                 <element inactive_on_update="false" label="JG Project Request" value="jg_project_request"/>

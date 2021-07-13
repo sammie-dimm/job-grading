@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="Jg User Profile" max_length="40" name="x_195491_job_gra_0_jg_user_profile" sizeclass="1" type="collection">
+    <element label="Jg User Profile" max_length="40" name="x_195491_job_gra_0_jg_user_profile" sizeclass="4" type="collection">
         <element label="Active" max_length="40" name="active" type="boolean"/>
         <element choice="3" label="Business Unit" max_length="40" name="business_unit" type="choice">
             <choice>

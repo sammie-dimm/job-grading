@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Matrix Version" max_length="40" name="x_195491_job_gra_0_matrix_version" type="collection">
+        <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
+        <element label="Function" max_length="32" name="function" reference="x_195491_job_gra_0_matrix" type="reference"/>
+        <element choice="1" label="Level" max_length="40" name="level" type="choice">
+            <choice/>
+        </element>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element choice="1" label="Type" max_length="40" name="type" type="choice">
+            <choice/>
+        </element>
+        <element label="(Type 1)Banding Chart" max_length="100" name="type_1_banding_chart" type="string"/>
+        <element label="Type 1 KPIs" max_length="4000" name="type_1_kpis" reference="x_195491_job_gra_0_matrix_kpis_type_1" reference_qual="active=true^EQ" reference_qual_condition="active=true^EQ" type="glide_list"/>
+        <element label="Type 2 KPIs" max_length="4000" name="type_2_kpis" type="glide_list"/>
+        <element label="Version" max_length="40" name="version" type="integer"/>
+        <index name="index">
+            <element name="function"/>
+        </index>
+    </element>
+</database>

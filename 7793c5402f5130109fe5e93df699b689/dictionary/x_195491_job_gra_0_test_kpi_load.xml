@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="sys_import_set_row" label="Test def" max_length="40" name="x_195491_job_gra_0_test_kpi_load" sizeclass="1744" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Band" label="Band" max_length="40" name="u_band" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Banding Chart" label="Banding Chart" max_length="811" name="u_banding_chart" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Business impact" label="Business impact" max_length="40" name="u_business_impact" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Category" label="Category" max_length="40" name="u_category" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Complexity" label="Complexity" max_length="40" name="u_complexity" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Current Version" label="Current Version" max_length="40" name="u_current_version" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Description" label="Description" max_length="264" name="u_description" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Function" label="Function" max_length="40" name="u_function" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=KPI" label="KPI" max_length="66" name="u_kpi" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=KPI Map Key" label="KPI Map Key" max_length="89" name="u_kpi_map_key" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=KPI Matrix" label="KPI Matrix" max_length="118" name="u_kpi_matrix" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Level" label="Level" max_length="40" name="u_level" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Master KPI" label="Master KPI" max_length="40" name="u_master_kpi" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Master KPI Reference" label="Master KPI Reference" max_length="40" name="u_master_kpi_reference" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Metric 1" label="Metric 1" max_length="138" name="u_metric_1" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Metric 2" label="Metric 2" max_length="143" name="u_metric_2" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Metric 3" label="Metric 3" max_length="145" name="u_metric_3" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Metric 4" label="Metric 4" max_length="122" name="u_metric_4" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Metric 5" label="Metric 5" max_length="138" name="u_metric_5" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Metric 6" label="Metric 6" max_length="181" name="u_metric_6" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Number" label="Number" max_length="40" name="u_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Tags" label="Tags" max_length="40" name="u_tags" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Type" label="Type" max_length="40" name="u_type" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Unit" label="Unit" max_length="40" name="u_unit" type="string"/>
+        <element attributes="import_attribute_name=Version" label="Version" max_length="40" name="u_version" type="integer"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Weight" label="Weight" max_length="40" name="u_weight" type="string"/>
+    </element>
+</database>

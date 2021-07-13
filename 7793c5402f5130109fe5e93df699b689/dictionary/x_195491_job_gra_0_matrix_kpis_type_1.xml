@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Matrix KPIs Type 1" max_length="40" name="x_195491_job_gra_0_matrix_kpis_type_1" type="collection">
+        <element default="true" label="Active" max_length="40" name="active" type="boolean"/>
+        <element label="Description" max_length="100" name="description" type="string"/>
+        <element label="Metric 1" max_length="40" name="metric_1" type="string"/>
+        <element label="Metric 2" max_length="40" name="metric_2" type="string"/>
+        <element label="Metric 3" max_length="40" name="metric_3" type="string"/>
+        <element label="Metric 4" max_length="40" name="metric_4" type="string"/>
+        <element label="Metric 5" max_length="40" name="metric_5" type="string"/>
+        <element label="Metric 6" max_length="40" name="metric_6" type="string"/>
+        <element display="true" label="Name" max_length="100" name="name" type="string"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element choice="1" label="Type" mandatory="true" max_length="40" name="type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Business Impact" sequence="100" value="business_impact"/>
+                <element inactive_on_update="false" label="Complexity" sequence="200" value="complexity"/>
+            </choice>
+        </element>
+        <element label="Weight" max_length="40" name="weight" type="integer"/>
+    </element>
+</database>

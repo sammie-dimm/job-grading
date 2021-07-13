@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="JG Request Action" max_length="40" name="x_195491_job_gra_0_jg_request_action" sizeclass="1" type="collection">
+    <element label="JG Request Action" max_length="40" name="x_195491_job_gra_0_jg_request_action" sizeclass="12" type="collection">
         <element default="(function(request,addParams){&#13;&#10;&#13;&#10;})(request,addParams); &#13;&#10;// set result variable to check if action is successfully executed" label="Action" mandatory="true" max_length="8000" name="action" type="script"/>
         <element choice="1" label="Available for role" mandatory="true" max_length="40" name="available_for_role" type="choice">
             <choice>
